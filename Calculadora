@@ -1,0 +1,212 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO81viTL4WJj/E/F3gzmMfM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pauloxzv322-rgb/Python/blob/main/Calculadora\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GU9QW124Ice6",
+        "outputId": "70ceebdf-1a40-44dd-adc4-55aa9d20abda"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o sseu nome:Paulo h\n",
+            "O seu nome é:  Paulo h\n"
+          ]
+        }
+      ],
+      "source": [
+        "nome = input (\"Digite o sseu nome:\")\n",
+        "print(\"O seu nome é: \", nome)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 01"
+      ],
+      "metadata": {
+        "id": "Yr-fSCAXNlnJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#####Calculo dos números\n",
+        "valor1 = int(input(\"Digite o seu valor:\"))\n",
+        "valor2 = int(input(\"Digite o seu valor:\"))\n",
+        "resultado = valor1 +  valor2\n",
+        "print(resultado)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZTjRZCoOKIZt",
+        "outputId": "3a7b0b00-0a5c-4a2d-bc35-f1b1618020fe"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu valor:10\n",
+            "Digite o seu valor:10\n",
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 02"
+      ],
+      "metadata": {
+        "id": "2zIuIxj_OdNV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#####Calculo dos números\n",
+        "valor1 = int(input(\"Digite o seu valor:\"))\n",
+        "valor2 = int(input(\"Digite o seu valor:\"))\n",
+        "resultado = valor1 -  valor2\n",
+        "print(resultado)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9kpaCzYxOfbE",
+        "outputId": "f531b6b0-58af-439e-c24e-3425b5933226"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu valor:10\n",
+            "Digite o seu valor:5\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 03"
+      ],
+      "metadata": {
+        "id": "yenWMyV4Rjyn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#####Calculo dos números\n",
+        "valor1 = int(input(\"Digite o seu valor:\"))\n",
+        "valor2 = int(input(\"Digite o seu valor:\"))\n",
+        "soma = valor1 + valor2\n",
+        "sub = valor1 - valor2\n",
+        "mult = valor1 * valor2\n",
+        "div = valor1 / valor2\n",
+        "print(\"seu resultado é :\", soma)\n",
+        "print(\"seu resultado é :\", sub)\n",
+        "print(\"seu resultado é :\", mult)\n",
+        "print(\"seu resultado é :\", div)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zz8OBv_FR78F",
+        "outputId": "c523ebb6-a837-47f8-e162-6b047d0bd0fc"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu valor:10\n",
+            "Digite o seu valor:10\n",
+            "seu resultado é : 20\n",
+            "seu resultado é : 0\n",
+            "seu resultado é : 100\n",
+            "seu resultado é : 1.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 04"
+      ],
+      "metadata": {
+        "id": "avb8S9e0YDhd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "usuario = input(\"Digite o seu nome: \")\n",
+        "print(\"Olá\",usuario,\"Seja Bem-vindo!\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cIqB2YneZQAr",
+        "outputId": "61182f3f-4427-49f0-d788-85e5f82e9f7e"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu nome: Paulo\n",
+            "Olá Paulo Seja Bem-vindo!\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
