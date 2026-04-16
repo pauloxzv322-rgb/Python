@@ -1,0 +1,202 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP4v1ekxsjS1yW5MYzvw0bk",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pauloxzv322-rgb/Python/blob/main/M%C3%A9todos%20de%20String\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4KzCH8m4PMQ0",
+        "outputId": "4e327490-f8a0-422c-ad29-861e121770ca"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ana\n"
+          ]
+        }
+      ],
+      "source": [
+        "nome = \"ANA\"\n",
+        "print(nome.lower())"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = \"ana\"\n",
+        "print(nome.upper())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xe93RE_ASYGS",
+        "outputId": "584a9be4-d336-4731-cf76-4e26eb47d0e6"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ANA\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 01"
+      ],
+      "metadata": {
+        "id": "1NlQNPISXuPp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1- Remova espaços extras\n",
+        "nome = \" MARIA EDUARDA ALMEIDA \"\n",
+        "email = \" MARIA.ALMEIDA@EMPRESA.COM \"\n",
+        "\n",
+        "nome = nome.strip()\n",
+        "email = email.strip()\n",
+        "\n",
+        "#2- Converter para minúsculo\n",
+        "nome = nome.lower()\n",
+        "email = email.lower()\n",
+        "\n",
+        "#3- Substituir o email\n",
+        "email = email.replace(\"empresa.com\", \"gmail.com\")\n",
+        "\n",
+        "#4- Quantidade de caracteres\n",
+        "quantidade = len(nome)\n",
+        "\n",
+        "#5- Último/primeiro\n",
+        "ultima_letra = nome[-9]\n",
+        "primeira_letra = nome[0]\n",
+        "print (\"Nome tratado:\", nome)\n",
+        "print (\"Email tratado:\", email)\n",
+        "print (\"Quantidade de caracteres:\", quantidade)\n",
+        "print (\"Última letra:\", ultima_letra)\n",
+        "print (\"Primeira letra:\", primeira_letra)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zQmR8Dn2Yxm6",
+        "outputId": "644ad8c1-3683-489d-d9d6-4748f1a10a23"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nome tratado: maria eduarda almeida\n",
+            "Email tratado: maria.almeida@gmail.com\n",
+            "Quantidade de caracteres: 21\n",
+            "Última letra: a\n",
+            "Primeira letra: m\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 02"
+      ],
+      "metadata": {
+        "id": "UaB-6Kqkkelc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "produto = input(\"Digite o nome do produto: \")\n",
+        "categoria = input(\"Digite a categoria do produto: \")\n",
+        "codigo = input(\"Digite seu código: \")\n",
+        "#1- Remover espaços extras\n",
+        "produto = produto.strip()\n",
+        "categoria = categoria.strip()\n",
+        "codigo = codigo.strip()\n",
+        "#2- Categoria minúsculo\n",
+        "categoria = categoria.lower()\n",
+        "#3- Maiúsculo e Substituir\n",
+        "codigo = codigo.upper()\n",
+        "codigo = codigo.replace(\"-\", \" \")\n",
+        "#4- Quantidade de caracteres\n",
+        "quantidade = len(produto)\n",
+        "#5- primeiro e 4 primeiros caracteres do codigo\n",
+        "primeira_letra = produto[0]\n",
+        "primeiros_cod = codigo[:4]\n",
+        "print (\"Produto\", produto)\n",
+        "print (\"Categoria\", categoria)\n",
+        "print (\"Código\", codigo)\n",
+        "print (\"Quantidade de caracteres\", quantidade)\n",
+        "print (\"Primeira letra\", primeira_letra)\n",
+        "print (\"4 primeiros caracteres do cod:\", primeiros_cod)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d2G6h6LEkjlc",
+        "outputId": "a811562f-e920-4543-c982-9cb46bb2c09c"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o nome do produto: carr o\n",
+            "Digite a categoria do produto: a   utomovel\n",
+            "Digite seu código: ABC-123-XYZ\n",
+            "Produto carr o\n",
+            "Categoria a   utomovel\n",
+            "Código ABC 123 XYZ\n",
+            "Quantidade de caracteres 6\n",
+            "Primeira letra c\n",
+            "4 primeiros caracteres do cod: ABC \n"
+          ]
+        }
+      ]
+    }
+  ]
+}
