@@ -1,0 +1,244 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOaDRP7uieR5cZJ6QS93X93",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pauloxzv322-rgb/Python/blob/main/COMPARADORES%20E%20OPERADORES\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2dI93xpteOHG",
+        "outputId": "02ed0041-d835-4325-f51f-e8ed6d9533e9"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8 é maior que 6: True\n",
+            "8 é maior que 7: False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"8 é maior que 6:\", 8 > 6)\n",
+        "print(\"8 é maior que 7:\", 8 < 7)\n",
+        "print( 8 == 7)\n",
+        "print( 10 >= 10)\n",
+        "print( 10 < 10)\n",
+        "print( 10 <= 10)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 01"
+      ],
+      "metadata": {
+        "id": "WWkOnQRSkSU4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "idade2 = int(input(\"Digite sua idade: \"))\n",
+        "print(idade == idade2)\n",
+        "print(idade != idade2)\n",
+        "print(idade > idade2)\n",
+        "print(idade < idade2)\n",
+        "print(idade <= idade2)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jD0zB6e3kVFo",
+        "outputId": "2bd248d7-2c8d-4fb4-f76c-96d88499e265"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade: 10\n",
+            "Digite sua idade: 26\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 02"
+      ],
+      "metadata": {
+        "id": "_ed88rARv3pV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "convite = input(\"Você tem cinvite ? (sim/não)\")\n",
+        "resultado = (idade >= 18) and (convite == \"sim\")\n",
+        "print(resultado)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IcgN9p0qv6hs",
+        "outputId": "f207da00-fc74-48af-eede-6a8c3e205988"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade: 19\n",
+            "Você tem cinvite ? (sim/não)sim\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 03"
+      ],
+      "metadata": {
+        "id": "TUJFeLobx_sF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "usuario = input(\"Digite seu usuário: \")\n",
+        "senha = input(\"Digite sua senha: \")\n",
+        "resultado = (usuario == \"admin\" and senha == \"1234\")\n",
+        "print(resultado)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-5N2qzGqyCLN",
+        "outputId": "16aee3e4-ea74-4900-e10c-515c33a3e3af"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite seu usuário: admin\n",
+            "Digite sua senha: 1234\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 04"
+      ],
+      "metadata": {
+        "id": "JRdoO01PzaCM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vip = input(\"Você é um usuário VIP ? (sim/não)\")\n",
+        "valor = float(input(\"Digite o valor da compra: \"))\n",
+        "resultado = (vip == \"sim\") or (valor > 100)\n",
+        "print(resultado)"
+      ],
+      "metadata": {
+        "id": "apPeH6muzcHz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Atividade 05"
+      ],
+      "metadata": {
+        "id": "r6jDModq2uyw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dia = input(\"Digite o dia da semana: \")\n",
+        "resultado = (dia == \"segunda\"\n",
+        "             or dia == \"terça\"\n",
+        "             or dia == \"quarta\"\n",
+        "             or dia == \"quinta\"\n",
+        "             or dia == \"sexta\")\n",
+        "print(resultado)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_4gWg3Xd2xpd",
+        "outputId": "1a9e05fc-e21c-47fe-db1d-0ab75dcec331"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o dia da semana: domingo\n",
+            "False\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
