@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMic1KFIyJ09dNj/6VNFCDG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pauloxzv322-rgb/Python/blob/main/IF%20E%20ELSE\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "IF E ELSE"
+      ],
+      "metadata": {
+        "id": "_wBab54d_MFp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "smgbDh9Tqv6-"
+      },
+      "outputs": [],
+      "source": [
+        "idade = int (input(\"Digite sua idade: \"))\n",
+        "if idade >= 18 :\n",
+        "  print(\"você é maior de idade\")\n",
+        "else:\n",
+        "  print(\"você é menor de idade\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "PRATICANDO IF E ELSE"
+      ],
+      "metadata": {
+        "id": "zMAjjRZj_egA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "if idade >= 18 :\n",
+        "  print(\"você é maior de idade\")\n",
+        "elif idade >= 16 and idade > 75:\n",
+        "  print(\"você é menor de idade\")\n",
+        "elif idade >= 18 and idade <= 75:\n",
+        "  print(\"voto obrigatorio\")\n",
+        "else:\n",
+        "  print (\"nenhuma das opçôes\")"
+      ],
+      "metadata": {
+        "id": "UVmZyKc69d1v"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
